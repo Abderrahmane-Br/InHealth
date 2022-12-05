@@ -1,0 +1,193 @@
+#fContainer {
+    /* opacity: 0; */
+    display: none;
+    position: absolute;
+    z-index: 30;
+    height: 100vh;
+    background-color: rgba(214, 200, 200, 0.356);
+    transition: opacity .3s;
+
+}
+form {
+    position: relative;
+    display: block;
+    height: 75%;
+    width: 30vw;
+    min-width: 420px;
+    margin: 6vh auto 0;
+    padding: 0vh 0px 10vh;
+    background-color: white;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px 2px rgb(177, 175, 175);
+    border-radius: 20px;
+    z-index: -3;
+}
+form.inscrF {
+    height: 36%;
+    width: 15vw;
+    min-width: 350px;
+}
+.inscrF input {
+    position: relative;
+    width: 80%;
+    margin: 3vh auto 0;
+}
+.inscrF>div {
+    position: relative;
+    margin-left: auto;
+    width: 70%;
+} 
+.inscrF input~span {
+    left: 40px;
+}
+.inscrF div>a {
+    font-size: small;
+    margin-left: 60px;
+}
+.inscrF #subF {
+    margin-top: 2vh;
+}
+.inscrF>div:first-of-type {
+    margin-bottom: 3vh;
+}
+input {
+    display: block;
+    height: 4.5vh;
+    width: 100%; 
+    /* max-width: 400px; */
+    /* min-width: 200px;            */
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    font-size: 1.8vh;
+    padding: 0px 10px;
+    background:none;
+}
+input:focus, select:focus {
+    border: 2px solid rgb(21, 107, 236);
+    outline: 0;
+    /* box-shadow: 1px 0px  1px rgb(21, 107, 236), 0px 1px 1px rgb(21, 107, 236), */
+    /* -1px 0px 1px rgb(21, 107, 236); */
+}
+form>div {
+    position: relative;
+    width: 80%;
+    z-index: 1;
+    margin-top: 2.5vh;
+}
+form>* {
+    margin: 3vh auto 0;
+}
+
+input~span {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    top: 0.8vh;
+    left: 10px;
+    font-size: 1.9vh;
+    color: rgb(156, 155, 155);
+    transform-origin: top;
+    transition: transform 0.175s ,top 0.175s, left 0.175s, padding .175s, background-color 0.15s;
+    z-index: -2;
+}
+.tips {
+    display: inline-block;
+    margin-top: 0.5vh;
+    font-size:1.6vh ;
+    color: rgb(126, 123, 123);
+    padding-left: 0.5vw;
+}
+.iFocus {
+    opacity: 1;
+    transform: scale(0.8);
+    color: rgb(21, 107, 236);
+    font-weight: 500;
+    padding: 0 4px ;
+    top: -1.3vh;
+    left: .2vw;
+    background-color: white;
+    z-index: 2;
+    /* box-shadow: 0px 0px 3px 2px white; */
+}
+h2 { 
+    width: fit-content;
+    margin: 5vh auto 2vh;
+}
+h2>span:first-child {
+    color: #00BFBA;
+}
+h2~div:first-of-type {
+    margin:0 auto  5vh;
+    font-size: 1.3em;
+    text-align: center;
+}
+select {
+    height: 5vh;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    appearance: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    text-align: center;
+}
+select:focus {
+    color:rgb(21, 107, 236)
+}
+select option {
+    color: black;
+}
+.tFields {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.tFields>div {
+    position: relative;
+    width: 100%;
+    /* margin-top: 2.5vh; */
+}
+.tFields>div:first-child {
+    margin-right: 2vw;
+}
+.tFields input {
+    /* min-width: 120px; */
+}
+#subF {
+    display: block;
+    width: 6vw;
+    min-width: 80px;
+    height: 4vh;
+    background-color: #173885;
+    color: white;
+    border-radius: 4px;
+    margin: 5.8vh auto 0px;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 600;
+    line-height: 4vh;
+}
+.x {
+    position: absolute;
+    height: 2vh;
+    width: 2vh;
+    top: -4vh;
+    right: -0.5vw;
+    background-color:lightgray;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.x img {
+    height: 1.15vh;
+}
+@media screen and (max-width: 400px) {
+    form {
+        width: 90%;
+        max-width: 90%;
+        min-width: 250px;
+    }
+}
