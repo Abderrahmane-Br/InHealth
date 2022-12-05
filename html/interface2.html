@@ -1,0 +1,2785 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta title="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InHealth</title>
+    <link rel="stylesheet" href="interface2.css">
+</head>
+
+<body>
+    <div id="interface">
+        <div id="explorer">
+            <h2 class="md-inactive"><span>In</span><span>Health</span></h2>
+            <div>
+                <div id="planningArea">
+                    <div class="explorerT md-inactive">Planning <img src="img/chevron-down.svg" alt=""></div>
+                    <ul>
+                        <li><a href="#">
+                                <img src="img/office-building.svg" alt="">
+                                <span class="md-inactive">Salle d'attente</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="img/phone.svg" alt="">
+                                <span class="md-inactive">Rendez-Vous</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div id="docArea">
+                    <div class="explorerT md-inactive">Documents <img src="img/chevron-down.svg" alt=""></div>
+                    <ul>
+                        <li><a href="#">
+                                <img src="img/folder.svg" alt="">
+                                <span class="md-inactive">Dossiers de patients</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="img/document-text.svg" alt="">
+                                <span class="md-inactive">Ordonnances</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="img/document-text.svg" alt="">
+                                <span class="md-inactive">Comptes rendus</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="img/currency-dollar.svg" alt="">
+                                <span class="md-inactive">Recettes</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div id="workArea">
+            <div id="tabs">
+                <a href="#" class="tabs tabSelected ">Salle d'attente</a>
+                <a href="#" class="tabs Inactive ">Rendez-Vous</a>
+                <a href="#" class="tabs Inactive disabled">Dossiers des patients</a>
+                <a href="#" class="tabs Inactive disabled">Ordonnances</a>
+                <a href="#" class="tabs Inactive disabled">Comptes rendus</a>
+                <a href="#" class="tabs Inactive disabled">Recettes</a>
+            </div>
+            <div id="tables">
+                <div class="tabContent">
+                    <div class="tabHeader">
+                        <div id="tabDate" class="md-inactive" class="md-inactive"><span>Mardi</span> 05 Avril 2021</div>
+                        <div class="tools ajouterP" title="Ajouter+.."><img src="img/user-add.svg" alt=""></div>
+                        <div class="tools" title="Modifier.."><img src="img/pencilW.svg" alt=""></div>
+                        <div class="tools supprimer" title="Supprimer-.."><img src="img/trashW.svg" alt=""></div>
+                        <div class="tools precedent" title="Précedent"><img src="img/chevron-left.svg" alt=""></div>
+                        <div class="tools" title="Pause"><img src="img/pause.svg" alt=""
+                                style="height: 30px; width: 30px;"></div>
+                        <div class="tools suivant" title="Suivant"><img src="img/chevron-right.svg" alt=""></div>
+                        <div class="searchBar"><img src="img/search.svg" alt=""><input placeholder="Rechercher...">
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>N°</th>
+                                <th>Prenom</th>
+                                <th>Nom</th>
+                                <th>Age</th>
+                                <th>Sexe</th>
+                                <th>Ville</th>
+                                <th>Statut</th>
+                                <th>Arrivé</th>
+                                <th>Consulté</th>
+                                <th>Terminé</th>
+                                <th>Docteur</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td></td>
+                                <td>Oran</td>
+                                <td><img src="img/check-circle.svg" alt=""> Terminé</td>
+                                <td>09:30</td>
+                                <td>09:55</td>
+                                <td>10:11</td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><img src="img/check-circle.svg" alt=""> Terminé</td>
+                                <td>09:30</td>
+                                <td>09:55</td>
+                                <td>10:11</td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><img src="img/check-circle.svg" alt=""> Terminé</td>
+                                <td>09:30</td>
+                                <td>09:55</td>
+                                <td>10:11</td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><img src="img/check-circle.svg" alt=""> Terminé</td>
+                                <td>09:30</td>
+                                <td>09:55</td>
+                                <td>10:11</td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><img src="img/check-circle.svg" alt=""> Terminé</td>
+                                <td>09:30</td>
+                                <td>09:55</td>
+                                <td>10:11</td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><img src="img/check-circle.svg" alt=""> Terminé</td>
+                                <td>09:30</td>
+                                <td>09:55</td>
+                                <td>10:11</td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr class="selectedRow">
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>07</td>
+                                <td>Abderrahmane</td>
+                                <td>Brahim</td>
+                                <td>21</td>
+                                <td>Homme</td>
+                                <td>Tiaret</td>
+                                <td><img src="img/login.svg" alt=""> En consultation</td>
+                                <td>15:30</td>
+                                <td>15:55</td>
+                                <td></td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>08</td>
+                                <td>Ali</td>
+                                <td>Boulenouar</td>
+                                <td>20</td>
+                                <td>Homme</td>
+                                <td>Tiaret</td>
+                                <td><img src="img/clock.svg" alt="">En attente</td>
+                                <td>15:44</td>
+                                <td>16:20</td>
+                                <td></td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>09</td>
+                                <td>Amir</td>
+                                <td>Ait</td>
+                                <td>20</td>
+                                <td>Homme</td>
+                                <td>Tiaret</td>
+                                <td><img src="img/clock.svg" alt="">En attente</td>
+                                <td>11:55</td>
+                                <td>13:20</td>
+                                <td></td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>10</td>
+                                <td>Zohra</td>
+                                <td>Cherifi</td>
+                                <td>43</td>
+                                <td>Homme</td>
+                                <td>Tissemsilt</td>
+                                <td><img src="img/clock.svg" alt="">En attente</td>
+                                <td>14:44</td>
+                                <td>16:35</td>
+                                <td></td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>11</td>
+                                <td>Hakem</td>
+                                <td>Aymen</td>
+                                <td>33</td>
+                                <td>Homme</td>
+                                <td>Blida</td>
+                                <td><img src="img/clock.svg" alt="">En attente</td>
+                                <td>14:50</td>
+                                <td></td>
+                                <td></td>
+                                <td>Dr.Bensaadia</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tabContent tableInactive">
+                    <div class="tabHeader">
+                        <div id="tabDate" class="md-inactive"><span>Mardi</span> 05 Avril 2021</div>
+                        <div class="tools ajouterP" title="Ajouter+.."><img src="img/user-add.svg" alt=""></div>
+                        <div class="tools" title="Ajt au salle d'attente.."><img src="img/loginW.svg" alt=""></div>
+                        <div class="tools" title="Modifier.."><img src="img/pencilW.svg" alt=""></div>
+                        <div class="tools supprimer" title="Supprimer-.."><img src="img/trashW.svg" alt=""></div>
+                        <div class="tools precedent" title="Précedent"><img src="img/chevron-left.svg" alt=""></div>
+                        <div class="tools suivant" title="Suivant"><img src="img/chevron-right.svg" alt=""></div>
+                        <div class="searchBar"><img src="img/search.svg" alt=""><input placeholder="Rechercher...">
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>N°</th>
+                                <th>Prenom</th>
+                                <th>Nom</th>
+                                <th>Age</th>
+                                <th>Sexe</th>
+                                <th>Ville</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr class="selectedRow">
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>benbouda</td>
+                                <td>hichel</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/userO.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/login.svg"></span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tabContent tableInactive">
+                    <div class="tabHeader">
+                        <div id="tabDate" class="md-inactive"><span>Mardi</span> 05 Avril 2021</div>
+                        <div class="tools ajouterP" title="Ajouter+.."><img src="img/folder-addO.svg" alt=""></div>
+                        <div class="tools" title="Modifier.."><img src="img/pencilW.svg" alt=""></div>
+                        <div class="tools supprimer" title="Supprimer-.."><img src="img/trashW.svg" alt=""></div>
+                        <div class="tools precedent" title="Précedent"><img src="img/chevron-left.svg" alt=""></div>
+                        <div class="tools suivant" title="Suivant"><img src="img/chevron-right.svg" alt=""></div>
+                        <div class="tools voir" title="voir"><img src="img/eyeW.svg" alt=""></div>
+                        <div class="tools imprimer" title="Imprimer"><img src="img/printer.svg" alt=""></div>
+                        <div class="searchBar"><img src="img/search.svg" alt=""><input placeholder="Rechercher...">
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>N°</th>
+                                <th>Prenom</th>
+                                <th>Nom</th>
+                                <th>Age</th>
+                                <th>Sexe</th>
+                                <th>Ville</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr class="selectedRow">
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>benbouda</td>
+                                <td>hichel</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/folder.svg" alt=""></td>
+                                <td>06</td>
+                                <td>Benkhaldia</td>
+                                <td>Hadjer</td>
+                                <td>34</td>
+                                <td>Femme</td>
+                                <td>Oran</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tabContent tableInactive">
+                    <div class="tabHeader">
+                        <div id="tabDate" class="md-inactive"><span>Mardi</span> 05 Avril 2021</div>
+                        <div class="tools ajouterP" title="Ajouter+.."><img src="img/document-addW.svg" alt=""></div>
+                        <div class="tools" title="Modifier.."><img src="img/pencilW.svg" alt=""></div>
+                        <div class="tools supprimer" title="Supprimer-.."><img src="img/trashW.svg" alt=""></div>
+                        <div class="tools precedent" title="Précedent"><img src="img/chevron-left.svg" alt=""></div>
+                        <div class="tools suivant" title="Suivant"><img src="img/chevron-right.svg" alt=""></div>
+                        <div class="tools voir" title="voir"><img src="img/eyeW.svg" alt=""></div>
+                        <div class="tools imprimer" title="Imprimer"><img src="img/printer.svg" alt=""></div>
+                        <div class="searchBar"><img src="img/search.svg" alt=""><input placeholder="Rechercher...">
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>N°</th>
+                                <th>Date</th>
+                                <th>Patient</th>
+                                <th>Docteur</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr class="selectedRow">
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>benbouda</td>
+                                <td>hichel</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/document.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tabContent tableInactive">
+                    <div class="tabHeader">
+                        <div id="tabDate" class="md-inactive"><span>Mardi</span> 05 Avril 2021</div>
+                        <div class="tools" title="Ajouter+.."><img src="img/clipboard-listW.svg" alt=""></div>
+                        <div class="tools" title="Modifier.."><img src="img/pencilW.svg" alt=""></div>
+                        <div class="tools supprimer" title="Supprimer-.."><img src="img/trashW.svg" alt=""></div>
+                        <div class="tools precedent" title="Précedent"><img src="img/chevron-left.svg" alt=""></div>
+                        <div class="tools suivant" title="Suivant"><img src="img/chevron-right.svg" alt=""></div>
+                        <div class="tools voir" title="voir"><img src="img/eyeW.svg" alt=""></div>
+                        <div class="tools imprimer" title="Imprimer"><img src="img/printer.svg" alt=""></div>
+                        <div class="searchBar"><img src="img/search.svg" alt=""><input placeholder="Rechercher...">
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>N°</th>
+                                <th>Date</th>
+                                <th>Patient</th>
+                                <th>Docteur</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr class="selectedRow">
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>benbouda</td>
+                                <td>hichel</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/clipboard.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tabContent tableInactive">
+                    <div class="tabHeader">
+                        <div id="tabDate" class="md-inactive"><span>Mardi</span> 05 Avril 2021</div>
+                        <div class="tools" title="Ajouter+.."><img src="img/document-addW.svg" alt=""></div>
+                        <div class="tools" title="Modifier.."><img src="img/pencilW.svg" alt=""></div>
+                        <div class="tools supprimer" title="Supprimer-.."><img src="img/trashW.svg" alt=""></div>
+                        <div class="tools precedent" title="Précedent"><img src="img/chevron-left.svg" alt=""></div>
+                        <div class="tools suivant" title="Suivant"><img src="img/chevron-right.svg" alt=""></div>
+                        <div class="tools voir" title="voir"><img src="img/eyeW.svg" alt=""></div>
+                        <div class="tools imprimer" title="Imprimer"><img src="img/printer.svg" alt=""></div>
+                        <div class="searchBar"><img src="img/search.svg" alt=""><input placeholder="Rechercher...">
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>N°</th>
+                                <th>Date</th>
+                                <th>Patient</th>
+                                <th>Montant</th>
+                                <th>Restant</th>
+                                <th>État</th>
+                                <th>Docteur</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr class="selectedRow">
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>benbouda</td>
+                                <td>hichel</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/x-circle.svg" alt="">Non soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/x-circle.svg" alt="">Non soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt="">Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/x-circle.svg" alt="">Non soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/currency-dollar.svg" alt=""></td>
+                                <td>06</td>
+                                <td>25/06/2021</td>
+                                <td>Boukhloua Belkacem</td>
+                                <td>2500 DA</td>
+                                <td>00 Da</td>
+                                <td><img src="img/check-circle.svg" alt=""> Soldée</td>
+                                <td>Dr.Mejadi Omar</td>
+                                <td><span class="supCln"><img src="img/trash.svg"></span><span><img
+                                            src="img/pencil.svg"></span><span><img src="img/eye.svg" alt=""></span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal supW">
+        <div>Veuillez-vous vraiment supprimer cet element?
+            <div class="choice"><span>Oui</span>
+                <span>Non</span>
+            </div>
+        </div>
+    </div>
+    <div id="ajoutP" class="modal ajoutF">
+        <form action="" class="formP">
+            <span class="x"><img src="../img/X.svg" alt=""></span>
+            <h2><span>In</span><span>Health</span></h2>
+            <div>
+                <h4>Nouveau patient :</h4>
+                <div><span id="nomP">Nom :</span><input type="text"></div>
+                <div><span id="prenomP">Prenom :</span><input type="text"></div>
+                <div><span id="ddnP">Date de naissance :</span><input type="text"></div>
+                <div><span id="sexeP">Sexe :</span><select name="Sexe">
+                        <option></option>
+                        <option value="Homme" id="hommeP">Homme</option>
+                        <option value="Femme" id="femmeP">Femme</option>
+                    </select></div>
+                <div><span id="adresseP">Adresse :</span><input type="text"></div>
+                <div><span id="telP">Télephone :</span><input type="text"></div>
+                <div><span id="medecinP">Médecin :</span><input type="text"></div>
+                <a href="#" id="ajouter">Ajouter</a>
+            </div>
+        </form>
+    </div>
+    <div id="ajoutR" class="modal ajoutF">
+        <form action="" class="formP">
+            <span class="x"><img src="../img/X.svg" alt=""></span>
+            <h2><span>In</span><span>Health</span></h2>
+            <div>
+                <h4>Nouveau RDV :</h4>
+                <div><span id="nomP">Nom :</span><input type="text"></div>
+                <div><span id="prenomP">Prenom :</span><input type="text"></div>
+                <div><span id="ddnP">Date de naissance :</span><input type="text"></div>
+                <div><span id="sexeP">Sexe :</span><select name="Sexe">
+                        <option></option>
+                        <option value="Homme" id="hommeP">Homme</option>
+                        <option value="Femme" id="femmeP">Femme</option>
+                    </select></div>
+                <div><span>Date de RDV :</span><input type="text"></div>
+                <div><span id="adresseP">Adresse :</span><input type="text"></div>
+                <div><span id="telP">Télephone :</span><input type="text"></div>
+                <div><span id="medecinP">Médecin :</span><input type="text"></div>
+                <a href="#" id="ajouter">Ajouter</a>
+            </div>
+        </form>
+    </div>
+    <div id="ajoutD" class="modal ajoutF">
+        <form action="" class="formP">
+            <span class="x"><img src="../img/X.svg" alt=""></span>
+            <h2><span>In</span><span>Health</span></h2>
+            <div>
+                <h4>Nouveau Dossier :</h4>
+                <div><span id="nomP">Nom :</span><input type="text"></div>
+                <div><span id="prenomP">Prenom :</span><input type="text"></div>
+                <div><span id="ddnP">Date de naissance :</span><input type="text"></div>
+                <div><span id="sexeP">Sexe :</span><select name="Sexe">
+                        <option></option>
+                        <option value="Homme" id="hommeP">Homme</option>
+                        <option value="Femme" id="femmeP">Femme</option>
+                    </select></div>
+                <div><span id="adresseP">Adresse :</span><input type="text"></div>
+                <div><span id="telP">Télephone :</span><input type="text"></div>
+                <div><span id="medecinP">Médecin :</span><input type="text"></div>
+                <a href="#" id="ajouter">Ajouter</a>
+            </div>
+        </form>
+    </div>
+    <div id="ajoutO" class="modal ajoutF">
+        <form action="" class="formP">
+            <span class="x"><img src="../img/X.svg" alt=""></span>
+            <h2><span>In</span><span>Health</span></h2>
+            <div>
+                <h4>Nouvelle Ordonnance :</h4>
+                <div><span id="nomP">Nom de patient:</span><input type="text"></div>
+                <div><span id="prenomP">Prenom de patient:</span><input type="text"></div>
+                <div><span id="ddnP">Age :</span><input type="text"></div>
+                <div><span id="sexeP">Sexe :</span><select name="Sexe">
+                        <option></option>
+                        <option value="Homme" id="hommeP">Homme</option>
+                        <option value="Femme" id="femmeP">Femme</option>
+                    </select></div>
+                <div><span>Medicaments :</span><select name="medicaments">
+                        <option></option>
+                    </select></div>
+                <div><span></span><textarea name="medicamentT" id="" cols="60" rows="10"></textarea></div>
+
+
+                <a href="#" id="ajouter">Ajouter</a>
+            </div>
+        </form>
+    </div>
+    <script src="interface2.js"></script>
+</body>
+
+</html>

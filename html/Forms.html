@@ -1,0 +1,169 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            display: block;
+            width: 30vw;
+            min-width: 420px;
+            margin: 10vh auto;
+            padding: 0vh 0px 10vh;
+            background-color: white;
+            border: 2px solid lightgray;
+            border-radius: 20px;
+            z-index: -3;
+        }
+        input {
+            display: block;
+            height: 4.5vh;
+            width: 100%; 
+            max-width: 400px;
+            min-width: 200px;           
+            border: 1px solid rgb(209, 209, 209);
+            border-radius: 5px;
+            font-size: 1.8vh;
+            padding: 0px 10px;
+            background:none;
+        }
+        input:focus, select:focus {
+            border: 2px solid rgb(21, 107, 236);
+            outline: 0;
+            /* box-shadow: 1px 0px  1px rgb(21, 107, 236), 0px 1px 1px rgb(21, 107, 236), */
+            /* -1px 0px 1px rgb(21, 107, 236); */
+        }
+        form>div {
+            position: relative;
+            width: 80%;
+            z-index: 1;
+            margin-top: 2.5vh;
+        }
+        form>* {
+            margin: 3vh auto 0;
+        }
+        
+        input~span {
+            position: absolute;
+            display: inline-block;
+            top: 1.2vh;
+            left: 10px;
+            font-size: 1.9vh;
+            color: rgb(156, 155, 155);
+            transform-origin: top;
+            transition: transform 0.25s ,top 0.25s, left 0.25s, padding .25s;
+            z-index: -2;
+        }
+        .tips {
+            display: inline-block;
+            margin-top: 0.5vh;
+            font-size:1.6vh ;
+            color: rgb(126, 123, 123);
+            padding-left: 0.5vw;
+        }
+        .iFocus {
+            opacity: 1;
+            transform: scale(0.8);
+            color: rgb(21, 107, 236);
+            font-weight: 500;
+            padding: 0 4px ;
+            top: -1.3vh;
+            left: .2vw;
+            background-color: white;
+            z-index: 2;
+            /* box-shadow: 0px 0px 3px 2px white; */
+        }
+        h2 { 
+            width: fit-content;
+            margin: 5vh auto;
+        }
+        select {
+            height: 5vh;
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            appearance: none;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        select:focus {
+            color:rgb(21, 107, 236)
+        }
+        select option {
+            color: black;
+        }
+        #fContainer {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .tFields {
+            display: flex;
+            justify-content: space-between;
+        }
+        .tFields>div {
+            position: relative;
+            width: 100%;
+        }
+        .tFields>div:first-child {
+            margin-right: 2vw;
+        }
+        .tFields input {
+            min-width: 120px;
+        }
+        @media screen and (max-width: 400px) {
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="fContainer">
+    <form action="" method="POST">
+        <h2>InHealth</h2>
+        <div class="tFields">
+            <div><input type="text" id="nom" name="nom" > <span>Nom</span><div>
+                <img src="" alt=""><span></span>
+            </div></div>
+            <div><input type="text" id="prenom" name="prenom" ><span>Prenom</span> <div>
+                <img src="" alt=""><span></span>
+            </div></div>
+        </div>
+        <div><input type="text" id="email" name="email" ><span>E-mail</span> <div>
+            <img src="" alt=""><span class="tips">Vous pouvez utiliser les lettres,les chifres et les points</span>
+        </div></div>
+        <div><input type="text" id="nTel" name="nTel" ><span>N° de téléphone</span> <div>
+            <img src="" alt=""><span class="tips">(+xxx) (xxx-xxx-xx)</span>
+        </div></div>
+        <div>
+        <div class="tFields">
+            <div><input type="password" id="mp" name="mp" ><span>Mot de passe</span> <div>
+                <img src="" alt=""><span class="tips"></span>
+            </div></div>
+            <div><input type="password" id="cmp" name="cmp" ><span>Confirmer</span> <div>
+                <img src="" alt=""><span class="tips"></span>
+            </div></div>
+        </div>
+        <span class="tips">Plus de 8 caratères, pensez à utiliser des lettres maj et min, des chifres et des symboles</span>
+    </div>
+        <select id="specialite" name="specialite"><option value="" disabled="" selected="" >Spécialité</option><option value="Allergologie" >Allergologie</option><option value="Anatomo-cyto-pathologie" >Anatomo-cyto-pathologie</option><option value="Anesthésiologie – Réanimation chirurgicale" >Anesthésiologie – Réanimation chirurgicale</option><option value="Audioprothésiste" >Audioprothésiste</option><option value="Autre" >Autre</option><option value="Cardiologie" >Cardiologie</option><option value="Centre de santé" >Centre de santé</option><option value="Chirurgie générale" >Chirurgie générale</option><option value="Chirurgie infantile" >Chirurgie infantile</option><option value="Chirurgie maxillo-faciale" >Chirurgie maxillo-faciale</option><option value="Chirurgie maxillo-faciale et stomatologie" >Chirurgie maxillo-faciale et stomatologie</option><option value="Chirurgie orthopédique et traumatologie" >Chirurgie orthopédique et traumatologie</option><option value="Chirurgie plastique reconstructrice et esthétique" >Chirurgie plastique reconstructrice et esthétique</option><option value="Chirurgie thoracique et cardio-vasculaire" >Chirurgie thoracique et cardio-vasculaire</option><option value="Chirurgie urologique" >Chirurgie urologique</option><option value="Chirurgie vasculaire" >Chirurgie vasculaire</option><option value="Chirurgie viscérale et digestive" >Chirurgie viscérale et digestive</option><option value="Chirurgien dentiste" >Chirurgien dentiste</option><option value="Coordinateur/trice" >Coordinateur/trice</option><option value="Dermatologie et vénérologie" >Dermatologie et vénérologie</option><option value="Diététicien" >Diététicien</option><option value="Endocrinologie et métabolismes" >Endocrinologie et métabolismes</option><option value="Epithèsiste Oculariste" >Epithèsiste Oculariste</option><option value="Ergothérapeute" >Ergothérapeute</option><option value="Gastro-entérologie" >Gastro-entérologie</option><option value="Gynécologie médicale" >Gynécologie médicale</option><option value="Gynécologie médicale et obstétrique" >Gynécologie médicale et obstétrique</option><option value="Gynécologie obstétrique" >Gynécologie obstétrique</option><option value="Généraliste" >Généraliste</option><option value="Génétique médicale" >Génétique médicale</option><option value="Gériatrie" >Gériatrie</option><option value="Hématologie" >Hématologie</option><option value="Infirmier" >Infirmier</option><option value="Infirmier Pratique Avancée" >Infirmier Pratique Avancée</option><option value="Infirmière Asalee" >Infirmière Asalee</option><option value="Maison de santé" >Maison de santé</option><option value="Masseur-kinésithérapeute" >Masseur-kinésithérapeute</option><option value="Médecin biologiste" >Médecin biologiste</option><option value="Médecine d'urgence" >Médecine d'urgence</option><option value="Médecine interne" >Médecine interne</option><option value="Médecine légale et expertises médicales" >Médecine légale et expertises médicales</option><option value="Médecine nucléaire" >Médecine nucléaire</option><option value="Médecine physique et de réadaptation" >Médecine physique et de réadaptation</option><option value="Médecine vasculaire" >Médecine vasculaire</option><option value="Médecines des Maladies infectieuse et tropicales" >Médecines des Maladies infectieuse et tropicales</option><option value="Neuro psychiatrie" >Neuro psychiatrie</option><option value="Neurochirurgie" >Neurochirurgie</option><option value="Neurologie" >Neurologie</option><option value="Néphrologie" >Néphrologie</option><option value="Obstétrique" >Obstétrique</option><option value="Oncologie médicale" >Oncologie médicale</option><option value="Oncologie radiothérapique" >Oncologie radiothérapique</option><option value="Ophtalmologie" >Ophtalmologie</option><option value="Opticien" >Opticien</option><option value="Orthodontiste" >Orthodontiste</option><option value="Orthophoniste" >Orthophoniste</option><option value="Orthoprothésiste" >Orthoprothésiste</option><option value="Orthoptiste" >Orthoptiste</option><option value="Orthésiste" >Orthésiste</option><option value="Ostéopathe" >Ostéopathie</option><option value="Oto Rhino Laryngologie" >Oto Rhino Laryngologie</option><option value="Pathologie cardio-vasculaire" >Pathologie cardio-vasculaire</option><option value="Pharmacie" >Pharmacie</option><option value="Pneumologie" >Pneumologie</option><option value="Podo-orthésiste" >Podo-orthésiste</option><option value="Psychiatrie générale" >Psychiatrie</option><option value="Psychiatrie de l’enfant et de l’adolescent" >Psychiatrie de l’enfant et de l’adolescent</option><option value="Psychologue" >Psychologue</option><option value="Pédiatre" >Pédiatrie</option><option value="Pédicure-podologue" >Pédicure-podologue</option><option value="Radiodiagnostic et Imagerie médicale" >Radiologie</option><option value="Radiothérapie" >Radiothérapie</option><option value="Rhumatologie" >Rhumatologie</option><option value="Réanimation médicale" >Réanimation médicale</option><option value="Sage-femme" >Sage-femme</option><option value="Santé publique et médecine sociale" >Santé publique et médecine sociale</option><option value="Stomatologie" >Stomatologie</option></select>
+    </form>
+</div>
+<script>
+    let input = document.getElementsByTagName('input');
+    let pAttr = [];
+    let mp = document.getElementById('mp');
+    let cmp = document.getElementById('cmp');
+    for (let i=0;i<input.length;i++) {
+        input[i].addEventListener('focus', ()=> {
+            input[i].nextElementSibling.classList.toggle('iFocus');
+        });
+        input[i].addEventListener('blur', ()=> {
+            input[i].nextElementSibling.classList.toggle('iFocus');
+        })
+    }
+    let firstLetter = /[A-z]/;
+    mp.addEventListener('keyup', (e)=> {
+        console.log(mp.value +'   first '+mp.value[0]+' '+firstLetter.test(mp.value[0]));
+    })
+</script>
+</body>
